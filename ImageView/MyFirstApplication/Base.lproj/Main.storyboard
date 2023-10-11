@@ -15,14 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naruto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dz-i0-Had">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Naruto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dz-i0-Had">
                                 <rect key="frame" x="176" y="209" width="79" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUK-zS-cQe">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUK-zS-cQe">
                                 <rect key="frame" x="112" y="668" width="207" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="l3b-De-WOd"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Change Image"/>
                                 <connections>
@@ -36,10 +39,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BH8-ph-NcA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="IEW-kw-N2b"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BH8-ph-NcA" secondAttribute="trailing" constant="8" id="eY6-RM-0w7"/>
-                            <constraint firstItem="SUK-zS-cQe" firstAttribute="top" secondItem="BH8-ph-NcA" secondAttribute="bottom" constant="79" id="joR-fw-dqW"/>
-                            <constraint firstItem="BH8-ph-NcA" firstAttribute="top" secondItem="2dz-i0-Had" secondAttribute="bottom" constant="101" id="m3Y-ib-E8Q"/>
+                            <constraint firstItem="BH8-ph-NcA" firstAttribute="centerX" secondItem="SUK-zS-cQe" secondAttribute="centerX" id="3TN-dp-asH"/>
+                            <constraint firstItem="BH8-ph-NcA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3VP-pI-BGx"/>
+                            <constraint firstItem="SUK-zS-cQe" firstAttribute="top" secondItem="BH8-ph-NcA" secondAttribute="bottom" constant="79" id="IUv-xE-qEA"/>
+                            <constraint firstItem="BH8-ph-NcA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="MNB-a2-tz0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SUK-zS-cQe" secondAttribute="bottom" constant="157" id="P2O-VB-I2E"/>
+                            <constraint firstItem="SUK-zS-cQe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="PK0-aD-ciG"/>
+                            <constraint firstItem="2dz-i0-Had" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="S2r-IB-0pr"/>
+                            <constraint firstItem="2dz-i0-Had" firstAttribute="centerX" secondItem="BH8-ph-NcA" secondAttribute="centerX" id="VLQ-V8-hzn"/>
+                            <constraint firstItem="2dz-i0-Had" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="sgW-Kp-zh7"/>
+                            <constraint firstItem="2dz-i0-Had" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wbt-f2-tIN"/>
                         </constraints>
                     </view>
                     <connections>

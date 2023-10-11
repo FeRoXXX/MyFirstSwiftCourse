@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProjectLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Layout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hv-Tx-Qqh">
+                                <rect key="frame" x="55" y="114" width="283" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBx-8O-1H1">
+                                <rect key="frame" x="271" y="447" width="80" height="85"/>
+                                <color key="backgroundColor" red="0.86078912019999998" green="0.63341879229999998" blue="0.46168658629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="DaI-ii-taJ"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="Hxg-9N-YMk"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="85" id="Nyi-fd-ogY"/>
+                                    <constraint firstAttribute="width" constant="80" id="P0r-LD-3iJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naruto.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="hGA-l7-twG">
+                                <rect key="frame" x="27" y="194" width="339" height="168"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Hv-Tx-Qqh" secondAttribute="trailing" constant="55" id="05S-oL-drU"/>
+                            <constraint firstItem="GBx-8O-1H1" firstAttribute="top" secondItem="hGA-l7-twG" secondAttribute="bottom" constant="85" id="1in-1i-qmJ"/>
+                            <constraint firstItem="GBx-8O-1H1" firstAttribute="top" secondItem="hGA-l7-twG" secondAttribute="bottom" constant="85" id="1mW-eC-juq"/>
+                            <constraint firstItem="GBx-8O-1H1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="998" constant="271" id="81u-Ny-oAK"/>
+                            <constraint firstItem="0Hv-Tx-Qqh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="Ccy-ly-NA1"/>
+                            <constraint firstItem="0Hv-Tx-Qqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="EyW-tu-PQE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GBx-8O-1H1" secondAttribute="trailing" constant="42" id="F2y-kr-2Rz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hGA-l7-twG" secondAttribute="trailing" constant="27" id="O2g-u5-5bQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GBx-8O-1H1" secondAttribute="bottom" constant="286" id="k4V-iH-jCT"/>
+                            <constraint firstItem="hGA-l7-twG" firstAttribute="top" secondItem="0Hv-Tx-Qqh" secondAttribute="bottom" constant="50" id="l1d-bD-nJV"/>
+                            <constraint firstItem="hGA-l7-twG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="uqS-nw-oOo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="naruto.jpeg" width="300" height="168"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

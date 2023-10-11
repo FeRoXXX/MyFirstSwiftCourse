@@ -12,17 +12,17 @@ class ViewController:
     
     @IBOutlet weak var firstTextField: UITextField!
     
-    
     @IBOutlet weak var secondTextField: UITextField!
     
     @IBOutlet weak var resultLable: UILabel!
     
-    var resultNumber = 0
+    private var resultNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
     
     
     @IBAction func sumClicked(_ sender: Any) {
